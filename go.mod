@@ -44,7 +44,7 @@ require (
 	github.com/prometheus/client_golang v1.22.0
 	github.com/prometheus/client_model v0.6.2
 	github.com/prometheus/common v0.64.0
-	github.com/redis/go-redis/v9 v9.6.3
+	github.com/redis/go-redis/v9 v9.16.0
 	github.com/sony/gobreaker v0.5.0
 	github.com/spf13/cast v1.8.0
 	github.com/spf13/pflag v1.0.6
@@ -398,6 +398,8 @@ require (
 	github.com/puzpuzpuz/xsync/v3 v3.0.0 // indirect
 	github.com/rabbitmq/amqp091-go v1.9.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9 // indirect
+	github.com/redis/go-redis/extra/rediscmd/v9 v9.16.0 // indirect
+	github.com/redis/go-redis/extra/redisotel/v9 v9.16.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/riferrei/srclient v0.7.2 // indirect
 	github.com/rs/zerolog v1.31.0 // indirect
@@ -520,7 +522,8 @@ replace (
 // Uncomment for local development for testing with changes in the components-contrib && kit repositories.
 // Don't commit with this uncommented!
 //
-// replace github.com/dapr/components-contrib => ../components-contrib
+replace github.com/dapr/components-contrib => ../components-contrib
+
 // replace github.com/dapr/kit => ../kit
 //
 // Then, run `make modtidy-all` in this repository.
